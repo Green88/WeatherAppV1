@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:weightSum="2">
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+        <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/empty_string"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:weightSum="2">
+            
+            <ImageView
+        	android:id="@+id/ivWeather"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/w01" 
+        	android:layout_weight="1"/>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical"
+        		android:layout_weight="1">
+                
+            <TextView
+                android:id="@+id/tvTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="@string/empty_string"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="40dp" />
+            
+             <TextView
+                 android:id="@+id/tvDescription"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="right"
+                 android:text="@string/empty_string"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+  
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvHumField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_string"
+                />
+
+            <TextView
+                android:id="@+id/tvHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_string"
+               />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvWindField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_string"
+                />
+
+            <TextView
+                android:id="@+id/tvWind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_string"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+	
+    </LinearLayout>
+    
+    <View
+    android:layout_width="1dip"
+    android:layout_height="fill_parent"
+    android:background="#000000" />
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:layout_weight="1"
+        >
+        	
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/day1"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="Day 1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/ivDay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:src="@drawable/f01" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="vertical"
+        	android:layout_gravity="center_vertical">
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="horizontal"
+        	android:weightSum="2">    
+        <TextView
+                android:id="@+id/tvDescriptionDay1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="Desc" />
+        <TextView
+                android:id="@+id/tvTempDay1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Temp" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="horizontal"
+        	android:weightSum="2">
+        
+        <TextView
+                android:id="@+id/tvHumDay1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Hum" />
+        <TextView
+                android:id="@+id/tvWindDay1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Wind" />
+        
+        </LinearLayout>
+        </LinearLayout>
+    	</LinearLayout>
+    	
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/day2"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="Day 2"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/ivDay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:src="@drawable/f01" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="vertical"
+        	android:layout_gravity="center_vertical">
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="horizontal"
+        	android:weightSum="2">
+        <TextView
+                android:id="@+id/tvDescriptionDay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="Desc" />
+        <TextView
+                android:id="@+id/tvTempDay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Temp" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="horizontal"
+        	android:weightSum="2">
+        
+        <TextView
+                android:id="@+id/tvHumDay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Hum" />
+        <TextView
+                android:id="@+id/tvWindDay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Wind" />
+        </LinearLayout>
+        </LinearLayout>
+    	</LinearLayout>
+    	
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        >
+
+         <TextView
+             android:id="@+id/day3"
+             android:layout_width="45dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:text="Day 3"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <ImageView
+             android:id="@+id/ivDay3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:src="@drawable/f01" />
+        
+         <LinearLayout 
+             android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="vertical"
+        	android:layout_gravity="center_vertical">
+        <LinearLayout 
+             android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="horizontal"
+        	android:weightSum="2">
+         <TextView
+                android:id="@+id/tvDescriptionDay3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="Desc" />
+         <TextView
+                android:id="@+id/tvTempDay3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Temp" />
+        </LinearLayout>
+         <LinearLayout 
+             android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="horizontal"
+        	android:weightSum="2">
+        
+        <TextView
+                android:id="@+id/tvHumDay3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Hum" />
+        <TextView
+                android:id="@+id/tvWindDay3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Wind" />
+        </LinearLayout>
+        </LinearLayout>
+    	</LinearLayout>
+    	
+        
+    	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        >
+
+        	<TextView
+        	    android:id="@+id/day4"
+        	    android:layout_width="45dp"
+        	    android:layout_height="wrap_content"
+        	    android:layout_gravity="center_horizontal|center_vertical"
+        	    android:text="Day 4"
+        	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        	<ImageView
+        	    android:id="@+id/ivDay4"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:src="@drawable/f01" />
+        	
+        	<LinearLayout 
+        	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="vertical"
+        	android:layout_gravity="center_vertical">
+        	<LinearLayout 
+        	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="horizontal"
+        	android:weightSum="2">    
+        	<TextView
+                android:id="@+id/tvDescriptionDay4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="Desc" />
+        	<TextView
+                android:id="@+id/tvTempDay4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Temp" />
+        	</LinearLayout>
+        	<LinearLayout 
+        	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="horizontal"
+        	android:weightSum="2">
+        	
+        	<TextView
+                android:id="@+id/tvHumDay4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Hum" />
+        	<TextView
+                android:id="@+id/tvWindDay4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Wind" />
+        	
+        </LinearLayout>
+        </LinearLayout>
+    	</LinearLayout>
+        
+        
+    </LinearLayout>
+
+</LinearLayout>
